@@ -1,0 +1,18 @@
+type Alert {
+    level: String!
+    value: Float!
+    id: String!
+}
+
+type Value {
+    value: Float!
+}
+
+type Query {
+    values: [Value]
+}
+
+type Subscription {
+    alert: Alert
+    value: Value
+}
